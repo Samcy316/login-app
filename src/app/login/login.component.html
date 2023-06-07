@@ -1,0 +1,57 @@
+
+<div class="content-body">
+    <form class="form1" [formGroup]="addStudent">
+        <h1>LOGIN</h1>
+        <div mat-dialog-content class="content">
+            <div class="row">
+                <mat-form-field appearance="fill">
+                    <mat-label>First Name</mat-label>
+                    <input matInput type="text" placeholder="samcy" formControlName="firstname" >
+                </mat-form-field>
+                <mat-form-field appearance="fill">
+                    <mat-label>Last Name</mat-label>
+                    <input matInput type="text" placeholder="Kamau"  formControlName="lastname" >
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="row">
+            <mat-form-field appearance="fill">
+                <mat-label>Email</mat-label>
+                <input matInput type="email" placeholder="Ex.samcy@gmail.com"  formControlName="email" >
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>password</mat-label>
+                <input matInput type="text" placeholder="enter password"  formControlName="password" value="login">
+
+            </mat-form-field>
+        </div>
+        <div mat-dialog-actions class="action">
+            <button mat-raised-button  type="button">cancel</button>
+            <button mat-raised-button class="action1" style="color: red;" (click)="saveData()">login</button>
+           
+        </div>
+        
+    </form>
+</div>
+
+<!-- <form [formGroup]="addStudent">
+    <mat-form-field appearance="fill">
+        <mat-label>Firstname</mat-label>
+        <input matInput type="text"   formControlName="firstname" >
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Lastname</mat-label>
+        <input matInput type="text"   formControlName="lastname" >
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Email</mat-label>
+        <input matInput type="email"   formControlName="email" >
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>password</mat-label>
+        <input matInput type="password"   formControlName="password" >
+    </mat-form-field>
+
+    <button mat-raised-button (click)="saveData()">Register</button>
+
+</form> -->
